@@ -1,0 +1,12 @@
+<html>
+    <body>
+        <h2>Menu</h2>
+        <ul>
+            {% for url, name in menu.items %}
+            <li>
+                <a target="_blank" href="/get_ticket/{{ url }}"> {{ name }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
